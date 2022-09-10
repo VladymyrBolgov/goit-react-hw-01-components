@@ -1,10 +1,13 @@
 .profile {
     background-color: white;
     border-radius: 4px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .description {
-    padding: 40px;
+    padding: 35px;
 }
 
 .avatar {
@@ -13,6 +16,7 @@
     border: 3px dashed grey;
     width: 50%;
     margin: 0 auto;
+    background: linear-gradient(to right, #8e88c0, #dfdfe5, #7070b1);
 }
 
 .name {
@@ -22,7 +26,7 @@
 .location,
 .tag {
     text-align: center;
-    color: lightgrey;
+    color: rgb(173, 163, 163);
 }
 
 .stats {
@@ -31,6 +35,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    
 }
 
 .stats li {
@@ -38,7 +43,16 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: lightpink;
+    background-color: rgb(231, 255, 182);
     padding: 40px 10px;
-    border: 2px dashed grey;
+    border: 2px solid grey;
+}
+.statsItem {
+    font-size: 24px;
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
