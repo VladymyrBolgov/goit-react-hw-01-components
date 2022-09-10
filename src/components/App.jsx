@@ -24,13 +24,13 @@ export const App = () => {
       }}
     >
       <Profile user={userData} />
-     
+      <Statistics title="Upload stats" stats={statsData} />
     </div>
   );
 };
 
 /*
-<Statistics title="Upload stats" stats={statsData} />
+
 <FriendList friends={friendData} />
 <TransactionHistory transactions={transactionData} />
 */
