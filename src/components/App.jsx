@@ -25,12 +25,13 @@ export const App = () => {
     >
       <Profile user={userData} />
       <Statistics title="Upload stats" stats={statsData} />
+      <FriendList friends={friendData} />
     </div>
   );
 };
 
 /*
 
-<FriendList friends={friendData} />
+
 <TransactionHistory transactions={transactionData} />
 */
