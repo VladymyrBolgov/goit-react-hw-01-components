@@ -8,7 +8,7 @@
     align-items: center;
     gap: 40px;
 
-    background-color: rgb(82, 101, 17);
+    background-color: rgb(195, 207, 153);
     max-width: 400px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -30,5 +30,5 @@
 .name {
     width: 40%;
     text-align: center;
-    color: rgb(196, 192, 255);
+    color: rgb(25, 25, 28);
 }

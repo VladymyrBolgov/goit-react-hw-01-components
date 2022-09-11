@@ -13,7 +13,7 @@
 .avatar {
     display: block;
     border-radius: 100%;
-    border: 3px dashed grey;
+    border: 3px dashed rgb(101, 94, 94);
     width: 50%;
     margin: 0 auto;
     background: linear-gradient(to right, #8e88c0, #dfdfe5, #7070b1);
@@ -45,7 +45,7 @@
     flex-direction: column;
     background-color: rgb(231, 255, 182);
     padding: 40px 10px;
-    border: 2px solid grey;
+    border: 2px solid rgb(98, 94, 94);
 }
 .statsItem {
     font-size: 24px;
