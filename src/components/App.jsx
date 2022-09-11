@@ -3,10 +3,10 @@ import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 //import TransactionHistory from './TransactionHistory/TransactionHistory';
 
-import userData from '../data/user.json;'
-import statsData from '../data/data.json';
-import friendData from '../data/friends.json';
-//import transactionData from '../data/transactions.json'
+import user from '../data/user.json;';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+//import transaction from '../data/transactions.json'
  
 export const App = () => {
   return (
@@ -23,9 +23,9 @@ export const App = () => {
         gap: '40px',
       }}
     >
-      <Profile user={userData} />
-      <Statistics title="Upload stats" stats={statsData} />
-      <FriendList friends={friendData} />
+      <Profile user={user} />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
@@ -33,5 +33,5 @@ export const App = () => {
 /*
 
 
-<TransactionHistory transactions={transactionData} />
+<TransactionHistory transactions={transaction} />
 */
