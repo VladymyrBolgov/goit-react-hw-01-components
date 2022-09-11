@@ -1,17 +1,20 @@
 import React from 'react';
 import css from './Profile.module.css';
-import PropTypes  from 'prop-types';
+import PropTypes from 'prop-types';
+
+import {Card, Description, Avatar, Name, Tag, Location} from './Profile.styled'
+
 
  const Profile = ({user}) => {
     let { username, tag, location, avatar, stats } = user;
     return (
-    <div className={css.profile}>
-        <div className={css.description}>
-            <img className={css.avatar} src={avatar} alt="User avatar" />
-                <p className={css.name}>{username}</p>
-                <p className={css.tag}>@{tag}</p>
-                <p className={css.location}>{location}</p>
-        </div>
+    <Card>
+        <Description>
+            <Avatar src={avatar} alt="User avatar" />
+                <Name>{username}</Name>
+                <Tag>@{tag}</Tag>
+                <Location>{location}</Location>
+        </Description>
 
         <ul className={css.stats}>
             <li className={css.statsItem}>
@@ -27,7 +30,7 @@ import PropTypes  from 'prop-types';
                 <span className={css.quantity}>{stats.likes}</span>
             </li>
         </ul>
-    </div>
+    </Card>
     )
 }
 
