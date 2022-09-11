@@ -7,9 +7,9 @@ const TransactionHistory = ({ transactions }) => {
         <table className={css.table}>
             <thead>
                 <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Currency</th>
                 </tr>
             </thead>
     
@@ -22,9 +22,20 @@ const TransactionHistory = ({ transactions }) => {
                             <td>{transaction.currency}</td>
                         </tr>
                     );
-                })}        
+                })}
             </tbody>
         </table>
+    );
+};
+
+TransactionHistory.propTypes = {
+    transactions: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            type: PropTypes.string.isRequired,
+            amount: PropTypes.string.isRequired,
+            currency: PropTypes.string.isRequired,
+        })
     )
 }
 
